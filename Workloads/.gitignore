@@ -1,0 +1,11 @@
+@"
+# Terraform local directory
+.terraform/
+.terraform.lock.hcl
+
+# Local state files
+*.tfstate
+*.tfstate.backup
+crash.log
+crash.*.log
+"@ | Out-File -FilePath .gitignore -Encoding utf8

@@ -1,0 +1,19 @@
+Root (Management / Payer Account)
+│
+├── Security OU
+│   ├── Log Archive Account (S3 Central Trail/Config Logs)
+│   └── Security Tooling Account (GuardDuty, Security Hub, Inspector)
+│
+├── Infrastructure
+│   ├── Network Account (Transit Gateway, Route 53, Direct Connect)
+│   └── Shared Services Account (Domain Controllers, Internal Mirrors)
+│
+├── Core OU
+│   ├── Identity & Governance Account (IAM Identity Center, SCIM)
+│   └── Central CI/CD Account (Shared Pipelines, Central ECR)
+│
+└── Workloads OU
+    ├── Non-Prod OU
+    │   └── Dev / Test / Staging Accounts
+    └── Prod OU
+        └── Production Workload Accounts
